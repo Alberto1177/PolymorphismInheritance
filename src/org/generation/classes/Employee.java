@@ -87,9 +87,9 @@ public class Employee {
 			return vacation;
 	   }//Metodo para calcular las vacaciones restantes del empleado
 
-		public double calculateBonus(){
+		public int calculateBonus(){
 	       // bonus = 2.2*salary
-			double bonus = 2.2*salary;
+			int bonus = (int) (2.2*salary);
 			return bonus;
 	   }//Metodo para calcular el bonus del empleado
 	

@@ -22,17 +22,18 @@ public class SalesRep extends Employee{
 		this.salesMade = salesMade;
 	}
 	
-	public double calculateComission(){
-	      double comission = 0.1 * salesMade;
+	public int calculateComission(){
+	      int comission = (int) (0.1 * salesMade);
 		return comission;
 	}//Metodo para calcular las comisiones 
 
 	@Override
 	public String toString() {
-		return "SalesRep [salesMade=" + salesMade + ", firstName=" + firstName + ", lastName=" + lastName
+		return "SalesRep [firstName=" + firstName + ", lastName=" + lastName
 				+ ", registration=" + registration + ", age=" + age + ", daysWorked=" + daysWorked
 				+ ", vacationDaysTaken=" + vacationDaysTaken + ", salary=" + salary + ", yearsWorked=" + yearsWorked
-				+ "]";
+				+", salesMade=" + salesMade
+				+ "]"; 
 	}
 	
 	
